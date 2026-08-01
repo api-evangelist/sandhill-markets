@@ -1,7 +1,30 @@
 aid: sandhill-markets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sandhill-markets.png
 name: Sandhill Markets
-description: Sandhill Markets is a company surfaced as a portfolio company of a16z and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sandhill Markets (formerly Stonks.com) was a private-markets investment
+  platform founded in 2020 by serial entrepreneur Ali Moiz, backed by a16z. It
+  let accredited investors buy and sell shares of leading pre-IPO companies
+  through a secondary marketplace, Special Purpose Vehicles (SPVs), and a planned
+  exchange, aiming to democratize an asset class historically gated by high
+  minimums and opaque pricing. As of this enrichment pass the company exposes no
+  public API, developer portal, or SDKs, and its primary web presence appears
+  defunct/misconfigured: the apex domain sandhillmarkets.com returns a GitHub
+  Pages "Site not found" 404, the former stonks.com domain now redirects to an
+  unrelated product, and no api/docs/app subdomains resolve. Only a beehiiv-hosted
+  newsletter subdomain (blog.sandhillmarkets.com) remains observable. This profile
+  is retained as a company/portfolio-lead stub with no API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/sandhill-markets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,33 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: no-api-surface
+x-notes: >-
+  Web presence defunct/misconfigured as of 2026-07-21 — apex sandhillmarkets.com
+  serves GitHub Pages 404; stonks.com redirects away; no api./docs./app.
+  subdomains resolve; no /.well-known/security.txt. a16z portfolio data marks
+  is_api_provider:false. No OpenAPI, portal, or SDKs found. Nothing to enrich
+  beyond identity.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Private Markets
+- Secondary Market
+- Pre-IPO
+- SPV
+- Investing
+- Accredited Investors
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
